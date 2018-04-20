@@ -48,8 +48,7 @@ namespace GoogleTest
         {
             Browser.Navigate().GoToUrl("https://www.google.ru/");
             if (IsElementExists(By.Id("lst-ib")) == true)
-            {               
-                    IsElementExists(By.Id("lst-ib"));
+            {                                 
                     IWebElement Poisk = Browser.FindElement(By.Id("lst-ib"));
                     Poisk.SendKeys("selenium");
                     Poisk.SendKeys(OpenQA.Selenium.Keys.Enter);
