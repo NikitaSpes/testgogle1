@@ -54,6 +54,10 @@ namespace GoogleTest
                     Poisk.SendKeys(OpenQA.Selenium.Keys.Enter);
                     wait.Until(ExpectedConditions.TitleIs("selenium - Поиск в Google"));                  
             }
+			else
+			{
+				 throw new ArgumentException("Нет окна для ввода");
+			}
         }
             
 
